@@ -1,0 +1,14 @@
+// Online C compiler to run C program online
+//Read a year if it is leap year or not and also check that year ending one should not be leap year and we have to also check that some year ending with zeroes are leap years like 2000 and 2400 and 2800 etc..so the condition is in if condiotion
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a%4==0&&(a%100!=0||a%400==0)){
+        printf("leap year");
+    }
+    else{
+        printf("not a year");
+    }
+    return 0;
+}
