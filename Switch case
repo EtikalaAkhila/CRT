@@ -1,0 +1,30 @@
+// switch case
+#include <stdio.h>
+int main() {
+    int ch,a,b;
+    printf("Enter the numbers:");
+    scanf("%d %d",&a,&b);
+    printf("Enter the choice:");
+    scanf("%d",&ch);
+    switch(ch){
+        case 1:
+       printf("Addition");
+       printf("%d",a+b);
+       break;
+        case 2:
+       printf("Subtraction");
+       printf("%d",a-b);
+       break;
+        case 3:
+       printf("Multiplication");
+       printf("%d",a*b);
+        break;
+        case 4:
+       printf("Division");
+       printf("%d",a/b);
+       break;
+       default:
+       printf("invalid input");
+    }
+    return 0;
+}
