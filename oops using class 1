@@ -1,0 +1,34 @@
+//Basic programme using java oops concept-3
+//Create a programme for two employee number name and salary 
+import java.util.*;
+class Sample {
+    int empno;
+    String empname;
+    double salary;
+    void get(int x,String y,double z)
+    {
+        empno=x;
+        empname=y;
+        salary=z;
+    }
+    void show()
+    {
+        System.out.println(empno+" "+empname+" "+salary);
+    }
+
+}
+class Test{
+    public static void main(String[] args)
+    {
+        Sample s1=new Sample();
+        s1.get(101,"alok",20.00);
+        s1.show();
+        Sample s2=new Sample();
+        s2.get(102,"vin",15.00);
+        s2.show();
+    }
+}
+
+Output:
+101 alok 20.0
+102 vin 15.0
