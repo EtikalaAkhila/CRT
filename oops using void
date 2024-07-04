@@ -1,0 +1,26 @@
+//Basic programme using java oops concept-2
+
+class Sample {
+    int a;
+    double b;
+    void get(){
+        a=100;
+        b=45.76;   
+    }
+    void show(){
+        System.out.println(a+" "+b);
+    }
+    public static void main(String[] args) {
+        Sample s1=new Sample();
+        s1.get();
+        s1.show();
+        Sample s2=new Sample();
+        s2.get();
+        s2.show();
+         }
+}
+
+
+output:
+100 45.76
+100 45.76
