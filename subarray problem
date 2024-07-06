@@ -1,0 +1,53 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+//Sub arrays program
+import java.util.*;
+class HelloWorld
+{
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        int i,j,k,ls=0;
+        for(i=0;i<n-1;i++)
+        {
+            int rs=0;
+            ls=ls+a[i]; 
+            for(j=i+1;j<n;j++)
+            {
+                rs=rs+a[j];
+            }
+            if(ls==rs)
+            {
+                k=i;
+                break;
+            }
+            
+        }
+            if(i==n-1)
+            {
+                System.out.print("Not Possible");
+            }
+            for(j=0;j<=i;j++)
+            System.out.print(a[j]+" ");
+            System.out.println();
+            for(j=i+1;j<n;j++)
+            System.out.print(a[j]+" ");
+                        
+
+        }
+    
+}
+
+
+Output:
+
+input:6 
+i/p:1 2 3 4 5 5
+Output:1 2 3 4 
+        5 5 
